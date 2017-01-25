@@ -1,0 +1,12 @@
+<component name="org.nuxeo.ecm.automation.custom-adapters">
+
+  <extension target="org.nuxeo.ecm.core.operation.OperationServiceComponent" point="adapters">
+  
+    <adapter accept="java.lang.String" produce="org.nuxeo.ecm.core.api.DocumentModelList"
+      class="org.nuxeo.ecm.automation.core.impl.adapters.StringToDocumentModelList" />
+    <adapter accept="java.util.ArrayList" produce="org.nuxeo.ecm.core.api.DocumentModelList"
+      class="org.nuxeo.ecm.automation.core.impl.adapters.ArrayListToDocumentModelList" />
+      
+  </extension>
+    
+</component>
